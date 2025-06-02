@@ -1,3 +1,5 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2035519185.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:623975298.
 export default function AdditionalServices() {
   return (
     <section className="py-16 bg-smartfit-white">
@@ -16,20 +18,8 @@ export default function AdditionalServices() {
         <div className="max-w-md mx-auto">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             {/* Service Image */}
-            <div className="relative h-48 bg-gradient-to-r from-gray-600 to-gray-800">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-3xl font-bold text-smartfit-yellow">smart</span>
-                    <span className="text-3xl font-bold text-white">fit</span>
-                  </div>
-                  <div className="text-smartfit-yellow text-2xl font-bold">Coach</div>
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-2 border-smartfit-yellow rounded-full opacity-50"></div>
-              <div className="absolute bottom-4 right-4 w-6 h-6 bg-smartfit-yellow rounded-full opacity-60"></div>
-              <div className="absolute top-1/2 right-8 w-4 h-4 bg-white rounded-full opacity-40"></div>
+            <div className="relative h-48 ">
+              <img src="https://assets.smartfit.com.br/attachments/d97a57e8163e5ad2df89f238f84dee4803ae8b4e/store/1ea7c8ff15ba58ab211bd0a813e7a72c8cee43c716fe89d784a286afee6a/image_mobile" alt="Smart Fit Coach" className="absolute inset-0 w-full h-full object-cover" />
             </div>
 
             {/* Service Content */}

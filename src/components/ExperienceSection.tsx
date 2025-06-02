@@ -2,17 +2,17 @@ export default function ExperienceSection() {
   const features = [
     {
       title: 'Equipos modernos',
-      image: 'https://ext.same-assets.com/2715102107/3730214372.webp',
+      image: 'https://ext.same-assets.com/2715102107/385051210.webp',
       alt: 'Equipos modernos de gimnasio'
     },
     {
       title: 'Clases grupales',
-      image: 'https://ext.same-assets.com/2715102107/2216706228.webp',
+      image: 'https://ext.same-assets.com/2715102107/3616124910.webp',
       alt: 'Clases grupales en Smart Fit'
     },
     {
       title: 'Zona de entrenamiento',
-      image: 'https://ext.same-assets.com/2715102107/4211964151.webp',
+      image: 'https://ext.same-assets.com/2715102107/1529962515.webp',
       alt: 'Zona de entrenamiento funcional'
     }
   ]

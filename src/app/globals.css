@@ -12,7 +12,7 @@
     --popover-foreground: 21 18 25;
     --primary: 225 166 39; /* #e1a627 */
     --primary-foreground: 251 249 247;
-    --secondary: 186 56 30; /* #ba381e */
+    --secondary: 243 0 1; /* #ba381e */
     --secondary-foreground: 251 249 247;
     --muted: 155 154 157; /* #9b9a9d */
     --muted-foreground: 21 18 25;
@@ -27,7 +27,7 @@
 
     /* SmartFit Custom Colors */
     --smartfit-yellow: 225 166 39; /* #e1a627 */
-    --smartfit-red: 186 56 30; /* #ba381e */
+    --smartfit-red: 243 0 1; /* #F30001 */
     --smartfit-black: 21 18 25; /* #151219 */
     --smartfit-white: 251 249 247; /* #fbf9f7 */
     --smartfit-gray: 155 154 157; /* #9b9a9d */

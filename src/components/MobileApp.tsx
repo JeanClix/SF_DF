@@ -22,12 +22,8 @@ export default function MobileApp() {
               </p>
 
               {/* QR Code */}
-              <div className="inline-block p-4 bg-white rounded-lg shadow-lg mb-6">
-                <div className="w-24 h-24 bg-black"></div>
-                {/* QR Code placeholder - in real implementation, you'd use a QR code library */}
-                <div className="w-24 h-24 bg-gradient-to-br from-black via-gray-800 to-black flex items-center justify-center text-white text-xs font-bold">
-                  QR
-                </div>
+              <div className="inline-block rounded-lg shadow-lg ">
+                <img src="https://assets.smartfit.com.br/production/newHome/qrcode.png" alt="" />
               </div>
             </div>
 
@@ -69,43 +65,10 @@ export default function MobileApp() {
           <div className="relative">
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                {/* Main Phone */}
                 <div className="relative z-10 bg-black rounded-3xl p-2 shadow-2xl">
-                  <div className="bg-gray-900 rounded-2xl overflow-hidden">
-                    <div className="bg-black h-6 flex items-center justify-center">
-                      <div className="flex space-x-1">
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                      </div>
-                    </div>
-                    <div className="bg-gradient-to-b from-smartfit-yellow to-orange-400 h-80 flex items-center justify-center">
-                      <div className="text-center text-smartfit-black">
-                        <div className="text-2xl font-bold mb-2">Smart Fit</div>
-                        <div className="text-sm">App</div>
-                      </div>
-                    </div>
-                  </div>
+                  <img src="https://assets.smartfit.com.br/images/new_home_br/app-devices-v2.webp" alt="" />
                 </div>
 
-                {/* Secondary Phone */}
-                <div className="absolute -right-8 top-12 z-0 bg-black rounded-3xl p-2 shadow-xl transform rotate-12 opacity-80">
-                  <div className="bg-gray-900 rounded-2xl overflow-hidden">
-                    <div className="bg-black h-6 flex items-center justify-center">
-                      <div className="flex space-x-1">
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                        <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                      </div>
-                    </div>
-                    <div className="bg-gradient-to-b from-gray-800 to-black h-64 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <div className="text-lg font-bold mb-1">Fit Go</div>
-                        <div className="text-xs">Workouts</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

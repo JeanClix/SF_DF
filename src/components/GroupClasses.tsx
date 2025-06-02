@@ -5,7 +5,7 @@ import { Clock, Activity } from 'lucide-react'
 const classes = [
   {
     name: 'ZUMBA',
-    image: 'https://ext.same-assets.com/2715102107/385051210.webp',
+    image: 'https://ext.same-assets.com/2715102107/3730214372.webp',
     duration: '45/50 min',
     intensity: 'Alta',
     description: 'Diviértete en una clase que fusiona el baile con una rutina de ejercicios al compás de la música, mejorando tu forma física y tu coordinación.',
@@ -13,7 +13,7 @@ const classes = [
   },
   {
     name: 'SMART TABATA',
-    image: 'https://ext.same-assets.com/2715102107/3616124910.webp',
+    image: 'https://ext.same-assets.com/2715102107/2216706228.webp',
     duration: '30 min',
     intensity: 'Alta',
     description: 'Clase de intervalos de alta intensidad, donde ejercicios vigorosos se combinan con breves descansos para maximizar resultados. Mejora tu resistencia, fuerza y salud en general en sesiones dinámicas y efectivas.',
@@ -21,7 +21,7 @@ const classes = [
   },
   {
     name: 'BIKE',
-    image: 'https://ext.same-assets.com/2715102107/1529962515.webp',
+    image: 'https://ext.same-assets.com/2715102107/4211964151.webp',
     duration: '45/60 min',
     intensity: 'Alta',
     description: 'Entrenamiento de indoor cycling que presenta 3 maneras de intensificación: lineal, ondulatoria y por intervalos; cuyo objetivo es la pérdida de grasa y el acondicionamiento cardiovascular.',
@@ -51,7 +51,7 @@ export default function GroupClasses() {
                   alt={classItem.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${classItem.color} bg-opacity-80`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-t bg-opacity-80`}></div>
                 <div className="absolute bottom-4 left-4">
                   <h3 className="text-white text-2xl font-bold">
                     {classItem.name}
