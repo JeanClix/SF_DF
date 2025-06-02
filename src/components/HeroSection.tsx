@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-left">
             <div className="mb-6">
-              <h1 className="text-yellow-400 text-4xl md:text-6xl font-bold mb-2">
+              <h1 className="text-smartfit-yellow text-4xl md:text-6xl font-bold mb-2">
                 PRIMER MES
               </h1>
               <div className="flex items-baseline">
