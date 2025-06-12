@@ -17,11 +17,6 @@ export default function Home() {
       <Header />
       <HeroSection />
       <GymFinder />
-      <PricingPlans />
-      <ExperienceSection />
-      <GroupClasses />
-      <MobileApp />
-      <AdditionalServices />
       <Footer />
       <CookieConsent />
     </main>

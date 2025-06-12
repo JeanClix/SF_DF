@@ -1,147 +1,74 @@
-import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react'
+'use client'
 
+// Import social media icons from lucide-react
+import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react'; // Note: LinkedIn icon is imported but not used in the provided URLs, a TikTok icon might be more appropriate if that's the intended platform.
+
+// Define the Footer functional component
 export default function Footer() {
   return (
-    <footer className="bg-smartfit-black text-smartfit-white">
-      {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Logo */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center text-4xl font-bold">
-            <span className="text-smartfit-white">smart</span>
-            <span className="text-smartfit-yellow">fit</span>
+    // Footer section with dark background and white text
+    <footer className="bg-gray-800 text-white py-8 rounded-t-lg shadow-inner"> {/* Added rounded top corners and inner shadow */}
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Flex container for responsive layout: column on small screens, row on medium and up */}
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          {/* Copyright information */}
+          <div className="mb-4 md:mb-0">
+            <p className="text-lg text-center md:text-left">
+              MEGA FORCE © 2025 Todos los derechos reservados.
+            </p>
           </div>
-        </div>
-
-        {/* Social Media */}
-        <div className="text-center mb-12">
-          <h3 className="text-xl font-semibold mb-6">Síguenos</h3>
-          <div className="flex justify-center space-x-6">
+          {/* Social Media Links */}
+          <div className="flex space-x-4">
+            {/* Instagram Link */}
             <a
-              href="https://www.facebook.com/smartfitpe"
-              className="w-12 h-12 bg-white text-smartfit-black rounded-full flex items-center justify-center hover:bg-smartfit-yellow transition-colors duration-200"
+              href="https://www.instagram.com/gymmegaforceoficial/"
+              target="_blank" // Opens link in a new tab
+              rel="noopener noreferrer" // Security best practice for target="_blank"
+              className="hover:opacity-80 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              aria-label="Instagram" // Accessibility improvement
+            >
+              <Instagram className="w-8 h-8" /> {/* Lucide React Instagram icon */}
+            </a>
+            {/* Facebook Link */}
+            <a
+              href="https://www.facebook.com/megaforce.hacienda/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-80 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              aria-label="Facebook"
             >
-              <Facebook size={20} />
+              <Facebook className="w-8 h-8" /> {/* Lucide React Facebook icon */}
             </a>
+            {/* YouTube Link */}
             <a
-              href="https://www.instagram.com/smartfitpe/"
-              className="w-12 h-12 bg-white text-smartfit-black rounded-full flex items-center justify-center hover:bg-smartfit-yellow transition-colors duration-200"
+              href="https://www.youtube.com/@megaforceate"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-80 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              aria-label="YouTube"
             >
-              <Instagram size={20} />
+              <Youtube className="w-8 h-8" /> {/* Lucide React YouTube icon */}
             </a>
+            {/* TikTok Link (using a generic social icon as TikTok is not in Lucide, or a custom SVG would be ideal) */}
+            {/* Since 'lucide-react' doesn't have a direct TikTok icon, I'll use a placeholder or you might consider a custom SVG. */}
+            {/* For this example, if Linkedin was intended for a general social link (instead of TikTok), I'd use it.
+                Given the URL is TikTok, I'll use a placeholder and note it. */}
             <a
-              href="https://www.youtube.com/channel/UC9T5QGLXy2mgQePIJfjdi-Q"
-              className="w-12 h-12 bg-white text-smartfit-black rounded-full flex items-center justify-center hover:bg-smartfit-yellow transition-colors duration-200"
+              href="https://www.tiktok.com/@gymmegaforce"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-80 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+              aria-label="TikTok"
             >
-              <Youtube size={20} />
+              {/* You might want to use a custom SVG for TikTok or find a specific icon library that includes it. */}
+              {/* For now, I'm using a simple text fallback or you could use a placeholder if an icon is not available. */}
+              <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.176 9.387c-.642-.234-1.393-.36-2.144-.36-1.571 0-2.846.592-3.805 1.776-.96 1.184-1.44 2.766-1.44 4.743v.014c0 1.977.48 3.559 1.44 4.743.959 1.184 2.234 1.776 3.805 1.776.75 0 1.501-.126 2.144-.36v2.09c-.642.234-1.393.36-2.144.36-2.846 0-5.143-1.423-6.892-4.267-1.75-2.844-2.625-6.52-2.625-11.026V.862c0-1.066.862-1.928 1.928-1.928h1.928c1.066 0 1.928.862 1.928 1.928v11.754c0 .825.253 1.472.76 1.942.507.47 1.17.705 1.986.705 1.066 0 1.928-.862 1.928-1.928V9.387z"/>
+              </svg>
             </a>
-            <a
-              href="https://www.tiktok.com/@smartfitpe"
-              className="w-12 h-12 bg-white text-smartfit-black rounded-full flex items-center justify-center hover:bg-smartfit-yellow transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-5 h-5 bg-smartfit-black rounded-sm"></div>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/smart-fit-perú/"
-              className="w-12 h-12 bg-white text-smartfit-black rounded-full flex items-center justify-center hover:bg-smartfit-yellow transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin size={20} />
-            </a>
-          </div>
-        </div>
-
-        {/* Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {/* Smart Fit Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Smart Fit</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="/acerca" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  ¿Quiénes somos?
-                </a>
-              </li>
-              <li>
-                <a href="/contacto" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Habla con nosotros
-                </a>
-              </li>
-              <li>
-                <a href="/faq" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="/politica-privacidad" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Política de datos personales de SmartFit Perú
-                </a>
-              </li>
-              <li>
-                <a href="/derechos-arco" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Formulario Derechos ARCO
-                </a>
-              </li>
-              <li>
-                <a href="/reclamaciones" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Libro de Reclamaciones
-                </a>
-              </li>
-              <li>
-                <a href="/sustentabilidad" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Sustentabilidad
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Plans Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Planes</h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="/planes" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Conoce nuestros planes
-                </a>
-              </li>
-              <li>
-                <a href="/documentos" className="text-smartfit-white hover:text-smartfit-yellow transition-colors duration-200">
-                  Documentos
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Libro de Reclamaciones */}
-        <div className="text-center">
-          <a href="/reclamaciones" className="inline-block">
-            <img
-              src="https://ext.same-assets.com/2715102107/3462649717.png"
-              alt="Libro de Reclamaciones"
-              className="h-16 hover:opacity-80 transition-opacity duration-200"
-            />
-          </a>
-        </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="text-center text-sm text-gray-400">
-            © 2024 Smart Fit. Todos los derechos reservados.
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
