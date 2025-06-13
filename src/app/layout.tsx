@@ -1,3 +1,4 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2806609141.
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1569518618.
 // Instructions: Update layout with DM Sans font and proper metadata for SmartFit
 
@@ -14,10 +15,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Smart Fit - PE | SMART FIT | PERÚ",
-  description: "Gimnasio Smart Fit - La red Smart Fit tiene como propósito democratizar el acceso a la práctica de actividad física de alto nivel, con planos accesibles y adhesión facilitada",
+  title: "MEGA FORCE | PERÚ",
   icons: {
-    icon: "https://www.smartfit.com.pe/favicon.ico",
+    icon: "https://th.bing.com/th/id/OIP.ZWolAlkJ8PiangZZFg0-egHaHa?rs=1&pid=ImgDetMain",
   }
 };
 

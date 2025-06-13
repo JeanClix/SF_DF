@@ -20,7 +20,7 @@ export default function Header() {
           <img
             src="https://ext.same-assets.com/727016425/2008953691.png"
             alt="Gym Megaforce Logo"
-            className="h-12 rounded-full" // Added rounded-full for a circular logo
+            className="h-12" // Removed rounded-full to display the full logo
           />
         </div>
 

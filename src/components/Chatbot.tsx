@@ -12,7 +12,7 @@ const Chatbot = () => {
 
     // Define the path to the Mega Force logo to be used as the chatbot icon.
     // This URL is taken from your Header component for consistency.
-    const megaforceLogoUrl = 'https://ext.same-assets.com/727016425/2008953691.png';
+    const megaforceLogoUrl = '/logo_bot.png';
 
     // 1. Add the Dialogflow Messenger script to the document body if it's not already present.
     if (!document.getElementById(scriptId)) {
@@ -50,9 +50,9 @@ const Chatbot = () => {
       style.textContent = `
         df-messenger {
           /* Color for the chat button and title bar background. */
-          --df-messenger-button-titlebar-color: #2D3748; /* Dark gray, similar to your footer */
+          --df-messenger-button-titlebar-color: #ffffff; /* Changed to white */
           /* Font color for the chat button and title bar text. */
-          --df-messenger-button-titlebar-font-color: #ffffff;
+          --df-messenger-button-titlebar-font-color: #333333; /* Adjusted for better contrast on white */
           /* Background color of the chat messages area. */
           --df-messenger-chat-background-color: #ffffff;
           /* Default font color for general text in the chat. */
